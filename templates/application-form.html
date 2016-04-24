@@ -1,11 +1,13 @@
-<!doctype html>
-{% extends "base.html" %}
+<!-- <!doctype html>
 <html>
-{% block head %}
-    {% block title %}{% endblock %}
+<head>
+    <title>Application Form</title>
     <link rel="stylesheet" type="text/css" href="/static/styles.css">
-{% endblock %}
-<body>
+</head>
+<body> -->
+
+{% extends "base.html" %}
+{% block content %}
 
     <div>
     <center><h1>Job Application Form</h1></center>
@@ -20,9 +22,7 @@
 <!-- This page needs a form that can capture data about the user's
 first name, last name, job title, and salary requirements. -->
 
-{% block stuff %}{% endblock %}
-
-    <!-- <center>
+    <center>
     <form action="/application-response" method="POST">
         <label for="first-name">First Name </label>
         <input type="text" name="first-name" id="first-name">
@@ -45,8 +45,10 @@ first name, last name, job title, and salary requirements. -->
         </center>
         </div>
 
-    </form> -->
+    </form>
 </center>
 
-</body>
-</html>
+{% endblock %}
+
+<!-- </body>
+</html> -->
