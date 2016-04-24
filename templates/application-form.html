@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+    <title>Ubermelon Application</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<!-- This page needs a form that can capture data about the user's
+first name, last name, job title, and salary requirements. -->
+
+    <div>
+    <center><h1>Job Application Form</h1></center>
+    </div>
+
+    <center><div class="instruction-box"><p>
+        UberMelon is hiring! Please submit your information via the form
+        below. Make sure to write a number in the salary requirement
+        field.
+    <p></div></center><p>
+
+    <center>
+    <form action="/application-response" method="POST">
+        <label for="first-name">First Name </label>
+        <input type="text" name="first-name" id="first-name">
+        <br>
+        <label for="last-name">Last Name </label>
+        <input type="text" name="last-name" id="last-name">
+        <br>
+        <label for="salary">Salary Requirement </label>
+        <input type="text" name="salary" id="salary" placeholder="Enter a number">
+        <br>
+        Job Title:<br>
+        <select name="job-title">
+            <option value="software-engineer">Software Engineer</option>
+            <option value="qa-engineer">QA Engineer</option>
+            <option value="product-manager">Product Manager</option>
+        </select>
+        <p>
+        <center><div class="button">
+        <input type="submit" value="Submit" id="button-submit">
+        </center>
+        </div>
+
+    </form>
+</center>
+
+</body>
+</html>
