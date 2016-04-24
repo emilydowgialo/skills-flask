@@ -1,25 +1,28 @@
 <!doctype html>
+{% extends "base.html" %}
 <html>
-<head>
-    <title>Ubermelon Application</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
+{% block head %}
+    {% block title %}{% endblock %}
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+{% endblock %}
 <body>
-
-<!-- This page needs a form that can capture data about the user's
-first name, last name, job title, and salary requirements. -->
 
     <div>
     <center><h1>Job Application Form</h1></center>
     </div>
 
     <center><div class="instruction-box"><p>
-        UberMelon is hiring! Please submit your information via the form
-        below. Make sure to write a number in the salary requirement
+        UberMelon is hiring! Please submit your information via the form. 
+        Make sure to write a number in the salary requirement
         field.
     <p></div></center><p>
 
-    <center>
+<!-- This page needs a form that can capture data about the user's
+first name, last name, job title, and salary requirements. -->
+
+{% block stuff %}{% endblock %}
+
+    <!-- <center>
     <form action="/application-response" method="POST">
         <label for="first-name">First Name </label>
         <input type="text" name="first-name" id="first-name">
@@ -42,7 +45,7 @@ first name, last name, job title, and salary requirements. -->
         </center>
         </div>
 
-    </form>
+    </form> -->
 </center>
 
 </body>
